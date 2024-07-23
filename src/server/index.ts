@@ -12,7 +12,6 @@ const initServer = async () => {
   await server.register(fastifyHelmet)
   await server.register(fastifyCompress)
 
-
   try {
     server.listen({
       port: parseInt(process.env.PORT as string) || 3030,
